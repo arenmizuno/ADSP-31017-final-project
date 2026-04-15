@@ -5,43 +5,28 @@
 **Instructor:** Gizem Agar  
 **Term:** Winter 2026  
 
----
-
-## Team Members
-
-G5:   
+**Team Members:** G5  
 - Daniel Babnigg  
-- Aren Mizuno 
-- Emily Xue
--  Hoon Yum  
-
----
-
-## Deliverables
-
-- `final_notebook.ipynb` – Full analysis, modeling, and evaluation  
-- `final_notebook.html` – Exported notebook for presentation  
-- `final_presentation.pptx` – Final presentation slides  
-- `final_report.docx` – Written technical report  
-- `final_recording.mp4` – Project walkthrough and presentation  
+- Aren Mizuno  
+- Emily Xue  
+- Hoon Yum  
 
 ---
 
 ## Overview
 
-This project focuses on predicting shipment delivery delays using machine learning models applied to real-world logistics data. The goal is to identify key drivers of delivery time deviations and provide actionable insights to improve operational efficiency and reduce delays.
+This repository contains my final project for *ADSP 31017: Machine Learning I*, a course focused on supervised learning methods, model evaluation, and practical machine learning workflows.
+
+The course emphasized building predictive models, performing feature engineering, validating model performance, and translating results into actionable business insights.
 
 ---
 
-## Data
+## Final Project
 
-The dataset contains **32,065 shipment-level observations** from a logistics network (LogistiCorp) spanning **2021–2024**.
+**Description:**  
+This project focuses on predicting shipment delivery delays using machine learning models applied to real-world logistics data. The goal is to identify key drivers of delivery time deviations and provide actionable insights to improve operational efficiency and reduce delays.
 
-Each observation represents a single shipment and includes:
-- Operational metrics (traffic congestion, costs, inventory levels)  
-- Driver-related features (behavior score, fatigue)  
-- Environmental factors (weather conditions)  
-- Route and supplier characteristics  
+The dataset contains **32,065 shipment-level observations** from a logistics network spanning **2021–2024**, with features including operational metrics, driver behavior, environmental conditions, and route characteristics.
 
 **Target Variable:**
 - `delivery_time_deviation` (in hours)  
@@ -51,12 +36,12 @@ Each observation represents a single shipment and includes:
 
 ---
 
-## Methodology
+### Methodology
 
 - **Data preprocessing:**
   - Removed missing values (~5.8%) after confirming minimal impact  
-  - One-hot encoded categorical variables (e.g., day of week)  
-  - Standardized features for linear/regularized models  
+  - One-hot encoded categorical variables  
+  - Standardized features for linear and regularized models  
 
 - **Feature engineering:**
   - `day_of_week` from timestamp  
@@ -82,7 +67,7 @@ Each observation represents a single shipment and includes:
 
 ---
 
-## Key Findings
+### Key Findings
 
 - Linear Regression performed best overall with **lowest RMSE (~3.37 hours)**  
 - Model performance across methods was relatively similar (R² ≈ 0.45)  
@@ -94,24 +79,44 @@ Each observation represents a single shipment and includes:
 
 ---
 
-## Business Impact
+### Business Impact
 
 - Estimated **$97M annual penalty exposure** from delayed shipments  
-- Model identifies “intervention zone” shipments where delays can be prevented  
+- Model identifies high-risk shipments for targeted intervention  
 - With a 50% intervention success rate:
   - ~$16.5M gross savings  
   - ~$13.9M net annual savings  
 
 ---
 
+### Project Deliverables
+
+- `final_notebook.ipynb`  
+  → Full analysis, modeling, and evaluation  
+
+- `final_notebook.html`  
+  → Exported notebook for presentation  
+
+- `final_presentation.pptx`  
+  → Final presentation slides  
+
+- `final_report.docx`  
+  → Written technical report  
+
+- `final_recording.mp4`  
+  → Project walkthrough and presentation  
+
+---
+
 ## Skills & Concepts Demonstrated
 
 - Supervised machine learning (regression models)  
-- Feature engineering and selection  
+- Feature engineering and preprocessing  
 - Model evaluation and cross-validation  
-- Interpretable modeling (Linear Regression)  
-- Tree-based models and nonlinear methods  
-- Business translation of ML outputs (financial impact)  
-- End-to-end ML pipeline development  
+- Regularization techniques (Ridge, Lasso, Elastic Net)  
+- Tree-based and nonlinear models  
+- Hyperparameter tuning (Grid Search)  
+- Translating ML outputs into business insights  
+- End-to-end machine learning pipeline development  
 
 ---
